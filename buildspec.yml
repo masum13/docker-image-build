@@ -1,4 +1,5 @@
---- 
+version: 0.2
+
 build: 
   commands: 
     - "echo Build started on `date`"
