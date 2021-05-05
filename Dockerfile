@@ -5,6 +5,7 @@ RUN apk add --no-cache git
 RUN go get github.com/golang/example/hello
 WORKDIR /go/src/github.com/golang/example/hello
 # Build the project and send the output to /bin/HelloWorld 
+# edit the file for just testing
 RUN go build -o /bin/HelloWorld
 
 FROM golang:1.12-alpine
