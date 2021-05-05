@@ -17,4 +17,4 @@ phases:
       - echo Logging in to Docker Hub...
       - echo $USERNAME
       - echo $PASSWORD
-      - docker login -username $USERNAME -password $PASSWORD
+      - docker login --username $USERNAME --password $PASSWORD
