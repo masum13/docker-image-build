@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:aws-region-id:aws-account-id::task-definition/ecs-demo-task-definition:revision-number"
+        TaskDefinition: "arn:aws:ecs:us-east-1:871739047920:task-definition/blue-green:3" 
         LoadBalancerInfo:
           ContainerName: "blue-green"
           ContainerPort: 80
