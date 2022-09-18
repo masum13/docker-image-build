@@ -1,5 +1,10 @@
 version: 0.0
 os: linux
+files:
+ - source: Dockerfile
+   destination: /
+ - source: index.html
+   destination: /
 hooks:
   ApplicationStart:
     - location: Scripts/deploy.sh
