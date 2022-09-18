@@ -4,5 +4,6 @@ RUN apt-get update && apt-get upgrade -y
 # Install NGINX to test.
 RUN apt-get install nginx -y
 # Expose port 80
+COPY index.html /var/www/html/
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
