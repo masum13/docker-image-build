@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cd ..
 pwd
 ls -al
 docker build -t "nginx:$DEPLOYMENT_ID" .
