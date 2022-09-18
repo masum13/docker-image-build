@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
  - source: Dockerfile
-   destination: /
+   destination: /home/ec2-user/
  - source: index.html
-   destination: /
+   destination: /home/ec2-user/
 hooks:
   ApplicationStart:
     - location: Scripts/deploy.sh
